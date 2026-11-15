@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Student Academic Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">Widaad<span>.dev</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="planner.html" class="active">Academic Planner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h2 class="section-title">Interactive Academic Planner</h2>
+        <p class="section-subtitle">Manage your assignments, readings, and exam preparation tasks.</p>
+
+        <div class="planner-wrapper card">
+            <form id="taskForm" class="planner-form">
+                <input type="text" id="taskInput" placeholder="Enter a new task (e.g., Submit COS 106 Project)..." required>
+                <select id="courseSelect">
+                    <option value="COS 106">COS 106</option>
+                    <option value="COS 102">COS 102</option>
+                    <option value="MTH 102">MTH 102</option>
+                    <option value="General">General</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Add Task</button>
+            </form>
+
+            <div class="planner-stats">
+                <span id="totalTasks">Total Tasks: 0</span>
+                <span id="completedTasks">Completed: 0</span>
+            </div>
+
+            <ul id="taskList" class="task-list">
+                <!-- Tasks will be dynamically rendered here by JavaScript -->
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kabiawu Widaad | MIVA Open University COS 106 Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

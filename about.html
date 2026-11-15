@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Student Academic Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">Widaad<span>.dev</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="planner.html">Academic Planner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-grid">
+            <section class="card">
+                <h3>Educational Background</h3>
+                <ul>
+                    <li><strong>B.Sc. Computer Science</strong> – MIVA Open University (2025 – Present)</li>
+                    <li><strong>West African Senior School Certificate (WASSCE)</strong> – Federal Government College (2018 – 2024)</li>
+                </ul>
+
+                <h3 class="mt-2">Career Aspirations</h3>
+                <p>My goal is to become a Full-Stack Software Engineer and Cloud Architect. I aim to build scalable digital solutions that improve access to education and financial services across Africa.</p>
+            </section>
+
+            <section class="card">
+                <h3>Technical Skills</h3>
+                <ul class="skill-list">
+                    <li>HTML5 & Semantic Web Structure</li>
+                    <li>CSS3 (Flexbox, Grid, Responsive Design)</li>
+                    <li>JavaScript (ES6+, DOM Manipulation)</li>
+                    <li>Git & GitHub Version Control</li>
+                    <li>Python Programming Fundamentals</li>
+                </ul>
+
+                <h3 class="mt-2">Hobbies & Interests</h3>
+                <ul>
+                    <li>Participating in university hackathons</li>
+                    <li>Reading tech blogs and sci-fi novels</li>
+                    <li>Playing chess and football</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- HTML Table Requirement -->
+        <section class="card mt-2">
+            <h3>Current Semester Course Load</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Title</th>
+                            <th>Credit Units</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>COS 106</td>
+                            <td>Introduction to Web Technologies</td>
+                            <td>3</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>COS 102</td>
+                            <td>Problem Solving & Programming</td>
+                            <td>3</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>MTH 102</td>
+                            <td>Elementary Mathematics II</td>
+                            <td>2</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>GST 102</td>
+                            <td>Use of English & Communication Skills</td>
+                            <td>2</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- HTML Multimedia Requirement -->
+        <section class="card mt-2">
+            <h3>Introduction Video & Audio Note</h3>
+            <p>Watch a quick overview of my coding journey or listen to my study focus playlist sample:</p>
+            <div class="media-grid">
+                <div>
+                    <h4>Sample Study Audio</h4>
+                    <audio controls>
+                        <source src="https://w3schools.com" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div>
+                    <h4>Project Demo Preview</h4>
+                    <video width="100%" controls poster="https://placehold.co">
+                        <source src="https://w3schools.com" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kabiawu Widaad| MIVA Open University COS 106 Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
